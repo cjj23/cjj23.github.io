@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>TeslaEnergy sign-in</title></head>
+<body>
+<p>Returning to the TeslaEnergy app…</p>
+<script>
+  window.location.replace("teslaenergy://auth" + window.location.search);
+</script>
+<p>If nothing happens, <a id="l" href="#">tap here</a>.</p>
+<script>
+  document.getElementById("l").href = "teslaenergy://auth" + window.location.search;
+</script>
+</body>
+</html>
